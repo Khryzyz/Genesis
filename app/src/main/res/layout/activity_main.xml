@@ -1,0 +1,45 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.genesisgrupoempresarial.confirmacionregistro.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/genesis_logo_transparent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/wrpTxtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgLogo">
+
+            <EditText
+                android:id="@+id/txtCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/main.hint.codigoConfirmacion"
+                android:inputType="number"
+                android:maxLength="15" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnCodigoCofirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wrpTxtCodigo"
+            android:text="@string/main.button.codigoConfirmacion" />
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

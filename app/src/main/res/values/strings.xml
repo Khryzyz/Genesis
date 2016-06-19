@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConfirmacionRegistro</string>
+    <string name="main.hint.codigoConfirmacion">Codigo de confirmación</string>
+    <string name="main.button.codigoConfirmacion">Confirmar código</string>
+</resources>
